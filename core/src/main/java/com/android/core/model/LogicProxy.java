@@ -11,11 +11,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-/**
- * @author: 蜡笔小新
- * @date: 2016-05-31 14:15
- * @GitHub: https://github.com/meikoz
- */
 public class LogicProxy {
     private static final LogicProxy m_instance = new LogicProxy();
 

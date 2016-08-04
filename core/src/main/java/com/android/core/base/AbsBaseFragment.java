@@ -5,25 +5,21 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.android.core.control.ToastUtil;
-import com.android.core.control.logcat.Logcat;
 import com.android.core.model.LogicProxy;
 import com.android.core.widget.dialog.DialogManager;
 
 import butterknife.ButterKnife;
 import cn.pedant.SweetAlert.SweetAlertDialog;
 
-/**
- * @author: 蜡笔小新
- * @date: 2016-05-26 17:19
- * @GitHub: https://github.com/meikoz
- */
 public abstract class AbsBaseFragment extends Fragment implements BaseView {
 
+    private final String TAG = "AbsBaseFragment";
     protected BasePresenter mPresenter;
     protected Context mContext;
 
@@ -40,7 +36,8 @@ public abstract class AbsBaseFragment extends Fragment implements BaseView {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Logcat.d("Fragment Location (%s.java:0)", getClass().getSimpleName());
+        Log.d(TAG, String.format("Fragment Location (%s.java:0)", getClass().getSimpleName()));
+
         mContext = getActivity();
     }
 
@@ -79,12 +76,12 @@ public abstract class AbsBaseFragment extends Fragment implements BaseView {
 
     @Override
     public void showProgress(String msg) {
-        DialogManager.showProgressDialog(mContext, msg);
+        DialogManager.showProgressDialog( getActivity(), msg);
     }
 
     @Override
     public void showProgress(String msg, int progress) {
-        DialogManager.showProgressDialog(mContext, msg, progress);
+        DialogManager.showProgressDialog( getActivity(), msg, progress);
     }
 
     @Override
@@ -94,7 +91,7 @@ public abstract class AbsBaseFragment extends Fragment implements BaseView {
 
     @Override
     public void showErrorMessage(String msg, String content) {
-        DialogManager.showErrorDialog(mContext, msg, content, new SweetAlertDialog.OnSweetClickListener() {
+        DialogManager.showErrorDialog( getActivity(), msg, content, new SweetAlertDialog.OnSweetClickListener() {
             @Override
             public void onClick(SweetAlertDialog sweetAlertDialog) {
                 sweetAlertDialog.dismissWithAnimation();

@@ -6,13 +6,13 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.Window;
 import android.widget.TextView;
 
 import com.android.core.R;
 import com.android.core.control.ToastUtil;
-import com.android.core.control.logcat.Logcat;
 import com.android.core.model.LogicProxy;
 import com.android.core.widget.dialog.DialogManager;
 
@@ -20,20 +20,16 @@ import butterknife.ButterKnife;
 import cn.pedant.SweetAlert.SweetAlertDialog;
 
 
-/**
- * @author: 蜡笔小新
- * @date: 2016-05-26 17:17
- * @GitHub: https://github.com/meikoz
- */
 public abstract class AbsBaseActivity extends AppCompatActivity implements BaseView {
 
+    private final String TAG = "AbsBaseActivity";
     protected Context mContext = null;//context
     protected BasePresenter mPresenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Logcat.d("Activity Location (%s.java:0)", getClass().getSimpleName());
+        Log.d(TAG, String.format("Activity Location (%s.java:0)", getClass().getSimpleName()));
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         mContext = this;
         setContentView(getLayoutResource());

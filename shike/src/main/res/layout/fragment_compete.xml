@@ -4,8 +4,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <include layout="@layout/fragment_toolbar"/>
-
     <com.jcodecraeer.xrecyclerview.XRecyclerView
         android:id="@+id/recly_view"
         android:layout_width="match_parent"
@@ -13,5 +11,4 @@
         android:clipToPadding="false"
         android:scrollbarStyle="outsideOverlay"
         android:scrollbars="vertical" />
-
 </LinearLayout>

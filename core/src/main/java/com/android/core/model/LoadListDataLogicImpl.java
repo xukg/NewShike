@@ -4,11 +4,6 @@ import com.android.core.base.BasePresenter;
 
 import retrofit2.Response;
 
-/**
- * @author: 蜡笔小新
- * @date: 2016-08-01 15:32
- * @GitHub: https://github.com/meikoz
- */
 public class LoadListDataLogicImpl<T> extends BasePresenter<LoadListDataLogic.LoadListView> implements LoadListDataLogic<T> {
     @Override
     public void onLoadComplete(Response<T> response, boolean isMore) {
