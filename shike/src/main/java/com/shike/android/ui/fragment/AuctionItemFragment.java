@@ -10,13 +10,13 @@ import butterknife.Bind;
 /**
  * Created by user on 16/8/3.
  */
-public class AuctionFragment extends AbsBaseFragment {
+public class AuctionItemFragment extends AbsBaseFragment {
 
     @Bind(R.id.toolbarTitle)
     TextView toolbarTitle;
 
-    public static AuctionFragment newInstance() {
-        AuctionFragment mFragment = new AuctionFragment();
+    public static AuctionItemFragment newInstance() {
+        AuctionItemFragment mFragment = new AuctionItemFragment();
         return mFragment;
     }
 

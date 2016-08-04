@@ -49,8 +49,8 @@
             android:background="@null"
             android:drawableLeft="@drawable/ic_tab_bar_home"
             android:drawablePadding="@dimen/dimen10"
-            android:hint="请输入密码"
-            android:inputType="textPassword"
+            android:hint="请输入验证码"
+            android:inputType="number"
             android:textSize="@dimen/text_size_16sp" />
     </LinearLayout>
 

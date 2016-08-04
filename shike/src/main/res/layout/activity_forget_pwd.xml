@@ -14,6 +14,25 @@
         android:gravity="center_vertical">
 
         <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen16"
+            android:background="@null"
+            android:drawableLeft="@drawable/ic_tab_bar_home"
+            android:drawablePadding="@dimen/dimen10"
+            android:hint="请输入手机号"
+            android:inputType="phone"
+            android:textSize="@dimen/text_size_16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen48"
+        android:layout_marginTop="@dimen/dimen0.5"
+        android:background="@android:color/white"
+        android:gravity="center_vertical">
+
+        <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/dimen16"
@@ -21,8 +40,8 @@
             android:background="@null"
             android:drawableLeft="@drawable/ic_tab_bar_home"
             android:drawablePadding="@dimen/dimen10"
-            android:hint="请输入手机"
-            android:inputType="phone"
+            android:hint="请输入验证码"
+            android:inputType="number"
             android:textSize="@dimen/text_size_16sp" />
 
         <TextView
@@ -51,109 +70,16 @@
             android:background="@null"
             android:drawableLeft="@drawable/ic_tab_bar_home"
             android:drawablePadding="@dimen/dimen10"
-            android:hint="请输入密码"
+            android:hint="请输入6至16位密码"
             android:inputType="textPassword"
             android:textSize="@dimen/text_size_16sp" />
     </LinearLayout>
 
     <Button
+        android:id="@+id/btnOk"
         style="@style/ButtonMain"
         android:layout_width="match_parent"
-        android:text="登录" />
+        android:text="重围密码" />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dimen40"
-        android:padding="@dimen/dimen10">
-
-        <TextView
-            android:id="@+id/tvReg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:background="@drawable/textview_press_bkg"
-            android:text="注册新账号" />
-
-        <TextView
-            android:id="@+id/tvForgetPwd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:background="@drawable/textview_press_bkg"
-            android:text="忘记密码?" />
-    </RelativeLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:paddingLeft="@dimen/dimen16"
-            android:paddingRight="@dimen/dimen16">
-
-            <View
-                style="@style/ListDivider"
-                android:layout_width="0dp"
-                android:layout_weight="1" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/dimen6"
-                android:text="第三方登录" />
-
-            <View
-                style="@style/ListDivider"
-                android:layout_width="0dp"
-                android:layout_weight="1" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="@dimen/dimen16">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:drawablePadding="@dimen/dimen10"
-                android:drawableTop="@drawable/ic_tab_bar_home"
-                android:gravity="center"
-                android:text="QQ登录" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:drawablePadding="@dimen/dimen10"
-                android:drawableTop="@drawable/ic_tab_bar_home"
-                android:gravity="center"
-                android:text="微博登录" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:drawablePadding="@dimen/dimen10"
-                android:drawableTop="@drawable/ic_tab_bar_home"
-                android:gravity="center"
-                android:text="微信登录" />
-        </LinearLayout>
-
-    </LinearLayout>
 
 </LinearLayout>
