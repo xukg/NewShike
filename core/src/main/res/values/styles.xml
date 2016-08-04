@@ -106,9 +106,15 @@
     </style>
 
     <style name="ListDivider">
-        <item name="android:background">@android:color/darker_gray</item>
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">@dimen/dimen0.5</item>
+        <item name="android:background">#dedede</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen0.1</item>
+    </style>
+
+    <style name="VDivider">
+        <item name="android:background">#dedede</item>
+        <item name="android:layout_width">@dimen/dimen0.1</item>
+        <item name="android:layout_height">match_parent</item>
     </style>
 
     <style name="ButtonMain">

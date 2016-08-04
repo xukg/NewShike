@@ -30,7 +30,7 @@
             android:layout_centerVertical="true"
             android:textAppearance="@style/TextAppearance.Larger.Orange"
             android:layout_marginRight="@dimen/dimen16"
-            android:background="@drawable/textview_press_bkg"
+            android:background="@drawable/press_bkg"
             android:text="点击获取验证码" />
     </LinearLayout>
 
@@ -70,7 +70,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:background="@drawable/textview_press_bkg"
+            android:background="@drawable/press_bkg"
             android:text="注册新账号" />
 
         <TextView
@@ -79,7 +79,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:background="@drawable/textview_press_bkg"
+            android:background="@drawable/press_bkg"
             android:text="忘记密码?" />
     </RelativeLayout>
 

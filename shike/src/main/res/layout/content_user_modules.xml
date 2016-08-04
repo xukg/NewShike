@@ -6,7 +6,7 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="15dp"
+        android:layout_height="@dimen/dimen10"
         android:background="@color/fill_color" />
 
     <TextView
@@ -15,8 +15,10 @@
         android:background="@color/line" />
 
     <RelativeLayout
+        android:id="@+id/rlMsg"
         android:layout_width="match_parent"
         android:layout_height="45dp"
+        android:background="@drawable/press_bkg"
         android:paddingLeft="15dp">
 
         <ImageView
@@ -32,7 +34,7 @@
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@id/iv_user_wallet_icon"
             android:gravity="center_vertical"
-            android:text="我的钱包" />
+            android:text="我的消息" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -50,8 +52,85 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/rlMoneyhistory"
         android:layout_width="match_parent"
         android:layout_height="45dp"
+        android:background="@drawable/press_bkg"
+        android:paddingLeft="15dp">
+
+        <ImageView
+            android:id="@+id/iv_zj_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_global_user_membercard" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_zj_icon"
+            android:gravity="center_vertical"
+            android:text="资金记录" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_movie_more" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlRealName"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/press_bkg"
+        android:paddingLeft="15dp">
+
+        <ImageView
+            android:id="@+id/iv_sm_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_global_user_membercard" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_sm_icon"
+            android:gravity="center_vertical"
+            android:text="实名认证" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_movie_more" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlHs"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/press_bkg"
         android:paddingLeft="15dp">
 
         <ImageView
@@ -67,7 +146,7 @@
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@id/iv_user_voucher_icon"
             android:gravity="center_vertical"
-            android:text="智能卡" />
+            android:text="我的呼声" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -84,9 +163,12 @@
             android:background="@color/line" />
     </RelativeLayout>
 
+
     <RelativeLayout
+        android:id="@+id/rlUplondBanner"
         android:layout_width="match_parent"
-        android:layout_height="45dp">
+        android:layout_height="45dp"
+        android:background="@drawable/press_bkg">
 
         <ImageView
             android:id="@+id/iv_user_schedule_icon"
@@ -102,7 +184,7 @@
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@id/iv_user_schedule_icon"
             android:gravity="center_vertical"
-            android:text="我的日程" />
+            android:text="广告图片上传" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -122,7 +204,12 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="15dp"
+        android:layout_height="0.1dp"
+        android:background="@color/line" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen10"
         android:background="@color/fill_color" />
 
     <TextView
@@ -131,8 +218,10 @@
         android:background="@color/line" />
 
     <RelativeLayout
+        android:id="@+id/rlShare"
         android:layout_width="match_parent"
         android:layout_height="45dp"
+        android:background="@drawable/press_bkg"
         android:paddingLeft="15dp">
 
         <ImageView
@@ -148,7 +237,7 @@
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@id/iv_user_feedback_icon"
             android:gravity="center_vertical"
-            android:text="联系客服" />
+            android:text="邀请好友" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -158,16 +247,28 @@
             android:layout_marginRight="15dp"
             android:background="@drawable/ic_movie_more" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0.1dp"
-            android:layout_alignParentBottom="true"
-            android:background="@color/line" />
     </RelativeLayout>
 
-    <RelativeLayout
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="45dp">
+        android:layout_height="0.1dp"
+        android:background="@color/line" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen10"
+        android:background="@color/fill_color" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/line" />
+
+    <RelativeLayout
+        android:id="@+id/rlSetting"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/press_bkg">
 
         <ImageView
             android:id="@+id/iv_user_cooperation_icon"
@@ -183,7 +284,7 @@
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@id/iv_user_cooperation_icon"
             android:gravity="center_vertical"
-            android:text="我要合作" />
+            android:text="设置" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -198,5 +299,7 @@
             android:layout_height="0.1dp"
             android:layout_alignParentBottom="true"
             android:background="@color/line" />
+
+
     </RelativeLayout>
 </LinearLayout>
