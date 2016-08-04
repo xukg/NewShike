@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">时客</string>
+    <string name="strHome">首页</string>
+    <string name="strAuction">拍卖</string>
+    <string name="strLive">直播</string>
+    <string name="strMine">我的</string>
+    <string name="strPersonCenter">个人中心</string>
+</resources>

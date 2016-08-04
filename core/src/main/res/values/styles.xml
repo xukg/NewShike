@@ -1,0 +1,152 @@
+<resources>
+
+
+    <style name="AppTheme" parent="AppTheme.Base"/>
+
+    <style name="AppTheme.NoneTranslucent" parent="AppTheme.Base">
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@android:color/transparent</item>
+        <item name="android:windowBackground">@color/sr_window_background</item>
+    </style>
+
+    <style name="mainActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionBarDivider">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- ToolBar -->
+    <style name="ToolBarStyle" parent="Theme.AppCompat">
+        <item name="android:actionBarSize">35dp</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <!-- Toolbar popup主题 -->
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="Theme.Swipe.Back" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.No.ActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="loading_dialog_style">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@color/abc_white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="loading_dialog_transparent_style">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <!--<item name="tabMaxWidth">@dimen/tab_max_width</item>-->
+        <item name="tabIndicatorColor">?attr/colorAccent</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>
+        <item name="tabSelectedTextColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="ListDivider">
+        <item name="android:background">@android:color/darker_gray</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/dimen0.5</item>
+    </style>
+
+    <style name="ButtonMain">
+        <item name="android:textAppearance">@style/TextAppearance.Larger.White</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">@dimen/dimen40</item>
+        <item name="android:layout_margin">@dimen/dimen10</item>
+        <item name="android:background">@drawable/button_bkg_main</item>
+    </style>
+
+    <style name="TextAppearance" />
+
+    <style name="TextAppearance.Large" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TextAppearance.Larger" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TextAppearance.Large.White" parent="@style/TextAppearance.Large">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="TextAppearance.Larger.White" parent="@style/TextAppearance.Larger">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TextAppearance.Large.LightBlack" parent="@style/TextAppearance.Large">
+        <item name="android:textColor">@color/abc_tab_text_normal</item>
+    </style>
+    <style name="TextAppearance.Larger.LightBlack" parent="@style/TextAppearance.Larger">
+        <item name="android:textColor">@color/abc_tab_text_normal</item>
+    </style>
+
+    <style name="TextAppearance.Large.Black" parent="@style/TextAppearance.Large">
+        <item name="android:textColor">@color/text_black</item>
+    </style>
+    <style name="TextAppearance.Larger.Black" parent="@style/TextAppearance.Larger">
+        <item name="android:textColor">@color/text_black</item>
+    </style>
+
+    <style name="TextAppearance.Large.Orange" parent="@style/TextAppearance.Large">
+        <item name="android:textColor">@color/text_orange</item>
+    </style>
+    <style name="TextAppearance.Larger.Orange" parent="@style/TextAppearance.Larger">
+        <item name="android:textColor">@color/text_orange</item>
+    </style>
+
+</resources>

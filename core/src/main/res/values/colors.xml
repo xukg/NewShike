@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="abc_theme_black_7f">#7f000000</color>
+    <color name="abc_tab_text_normal">#212121</color>
+    <color name="abc_white">#ffffff</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="sr_window_background">#EEEEEE</color>
+
+    <color name="list_divider">#ffe9e9e9</color>
+
+    <color name="text_orange">#fff8be34</color>
+    <color name="text_black">#ff061218</color>
+
+
+
+
+
+
+
+
+
+    <drawable name="grey">@android:color/darker_gray</drawable>
+    <drawable name="transparent">@android:color/transparent</drawable>
+    <drawable name="colorPrimary">@color/colorPrimary</drawable>
+</resources>

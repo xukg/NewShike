@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <FrameLayout
+        android:id="@+id/mainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navigateTabBar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen0.5"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen45"
+        android:background="#dedede" />
+
+    <com.android.core.widget.TabStripView
+        android:id="@+id/navigateTabBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen45"
+        android:layout_alignParentBottom="true"
+        app:containerId="@id/mainContainer"
+        app:navigateTabSelectedTextColor="@color/colorPrimary"
+        app:navigateTabTextColor="@color/abc_tab_text_normal"
+        app:navigateTabTextSize="@dimen/text_size_9sp" />
+</RelativeLayout>
