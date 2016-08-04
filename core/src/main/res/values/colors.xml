@@ -3,9 +3,9 @@
     <color name="abc_theme_black_7f">#7f000000</color>
     <color name="abc_tab_text_normal">#212121</color>
     <color name="abc_white">#ffffff</color>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#23c89e</color>
+    <color name="colorPrimaryDark">#23c89e</color>
+    <color name="colorAccent">#23c89e</color>
     <color name="sr_window_background">#EEEEEE</color>
 
     <color name="list_divider">#ffe9e9e9</color>

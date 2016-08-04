@@ -51,4 +51,9 @@ public class PersonFragment extends AbsBaseFragment {
             }
         });
     }
+
+    @Override
+    protected void onInitData() {
+
+    }
 }

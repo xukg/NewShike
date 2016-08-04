@@ -12,11 +12,6 @@ import com.bumptech.glide.load.model.stream.StreamModelLoader;
 import java.io.IOException;
 import java.io.InputStream;
 
-/**
- * @author: 蜡笔小新
- * @date: 2016-08-01 16:42
- * @GitHub: https://github.com/meikoz
- */
 public class GlideImageLoaderStrategy implements BaseImageLoaderStrategy {
     @Override
     public void loadImage(Context ctx, ImageLoader img) {

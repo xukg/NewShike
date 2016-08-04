@@ -1,7 +1,5 @@
 package com.android.core.api;
 
-import android.util.Log;
-
 import com.android.core.MainApp;
 import com.android.core.control.NetWorkHelper;
 
@@ -12,11 +10,6 @@ import okhttp3.Interceptor;
 import okhttp3.Request;
 import okhttp3.Response;
 
-/**
- * @author: 蜡笔小新
- * @date: 2016-05-31 14:15
- * @GitHub: https://github.com/meikoz
- */
 public class HttpCacheInterceptor implements Interceptor {
 
     @Override

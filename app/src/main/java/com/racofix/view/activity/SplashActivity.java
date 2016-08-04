@@ -1,6 +1,7 @@
 package com.racofix.view.activity;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.ScaleAnimation;
 import android.widget.ImageView;
@@ -29,7 +30,12 @@ public class SplashActivity extends AbsBaseActivity {
     }
 
     @Override
-    protected void onInitView() {
+    protected void onInitData() {
+
+    }
+
+    @Override
+    protected void onInitView(Bundle savedInstanceState) {
         //设置状态栏透明
         StatusBarUtil.setTranslucentBackground(this);
         ScaleAnimation animation = new ScaleAnimation(1f, 1.1f, 1f, 1.1f,

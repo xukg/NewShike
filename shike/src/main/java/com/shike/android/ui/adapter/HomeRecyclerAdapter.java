@@ -26,11 +26,15 @@ public class HomeRecyclerAdapter extends RecyclerAdapter<Classify.TngouEntity> {
 //        Uri uri = Uri.parse(URL_Base + item.getImg());
         String url = URL_Base + item.getImg();
         ImageView view = holder.getView(R.id.sv_classitfy_img);
-        ImageLoaderUtil.getInstance().loadCircleImage(mContext, new ImageLoader.Builder()
+
+//        LoadingImgUtil.loadimgAnimate(url, view);
+
+        ImageLoaderUtil.getInstance().loadImage(mContext, new ImageLoader.Builder()
                 .url(url)
-                .placeHolder(R.color.abc_theme_black_7f)
+                .placeHolder(R.drawable.icon_load_default_img)
                 .imgView(view)
                 .build());
+
         holder.setText(R.id.sv_classitfy_des, item.getTitle());
         holder.setOnClickListener(R.id.sv_classitfy_img, new View.OnClickListener() {
             @Override

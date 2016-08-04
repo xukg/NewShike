@@ -1,5 +1,7 @@
 package com.racofix.presenter;
 
+import android.util.Log;
+
 import com.android.core.model.LoadEveryLogicImpl;
 import com.racofix.api.Factory;
 import com.racofix.model.repo.Classify;
@@ -20,6 +22,7 @@ public class LoginPresenter extends LoadEveryLogicImpl<Classify> implements Logi
         Factory.provideHttpService().getImageClassify(1).enqueue(new Callback<Classify>() {
             @Override
             public void onResponse(Call<Classify> call, Response<Classify> response) {
+                Log.d("LoginPresenter", response.toString());
                 onLoadCompleteData(response);
             }
 

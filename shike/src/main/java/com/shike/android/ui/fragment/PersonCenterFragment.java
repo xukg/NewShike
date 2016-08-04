@@ -1,6 +1,5 @@
 package com.shike.android.ui.fragment;
 
-import android.support.v7.widget.Toolbar;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;

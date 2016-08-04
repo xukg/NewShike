@@ -2,6 +2,7 @@ package com.racofix.view.activity;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Bundle;
 import android.widget.EditText;
 
 import com.android.core.base.AbsBaseActivity;
@@ -40,7 +41,12 @@ public class LoginActivity extends AbsBaseActivity implements LoadEveryLogic.Loa
     }
 
     @Override
-    protected void onInitView() {
+    protected void onInitData() {
+
+    }
+
+    @Override
+    protected void onInitView(Bundle savedInstanceState) {
         titlebar.setTitle("登录页面");
         mPresenter = getLogicImpl(LoginContract.class, this);
     }

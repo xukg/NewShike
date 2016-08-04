@@ -3,12 +3,6 @@ package com.android.core;
 import android.app.Application;
 import android.content.Context;
 
-
-/**
- * @author: 蜡笔小新
- * @date: 2016-05-26 17:31
- * @GitHub: https://github.com/meikoz
- */
 public class MainApp extends Application {
 
     private static MainApp ourInstance = new MainApp();
@@ -28,5 +22,20 @@ public class MainApp extends Application {
         ourInstance = this;
         mContext = getApplicationContext();
 
+//        initImageLoader(mContext);
     }
+
+//    public static void initImageLoader(Context context) {
+//        ImageLoaderConfiguration.Builder config = new ImageLoaderConfiguration.Builder(context);
+//        config.threadPriority(Thread.NORM_PRIORITY - 2);
+//        config.denyCacheImageMultipleSizesInMemory();
+//        config.diskCacheFileNameGenerator(new Md5FileNameGenerator());
+//        config.diskCacheSize(50 * 1024 * 1024); // 50 MiB
+//        config.tasksProcessingOrder(QueueProcessingType.LIFO);
+////		config.writeDebugLogs(); // Remove for release app
+//
+//        // Initialize ImageLoader with configuration.
+//        ImageLoader.getInstance().init(config.build());
+//        L.writeLogs(false);
+//    }
 }

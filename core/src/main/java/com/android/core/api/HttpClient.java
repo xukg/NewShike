@@ -3,11 +3,6 @@ package com.android.core.api;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-/**
- * @author: 蜡笔小新
- * @date: 2016-05-31 14:15
- * @GitHub: https://github.com/meikoz
- */
 public class HttpClient {
 
     private static HttpClient mInstance;

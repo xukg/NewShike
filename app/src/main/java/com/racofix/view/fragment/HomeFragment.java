@@ -46,6 +46,11 @@ public class HomeFragment extends AbsBaseFragment implements LoadListDataLogic.L
         mPresenter = getLogicImpl(MainContract.class, this);
     }
 
+    @Override
+    protected void onInitData() {
+
+    }
+
     // 广告数据
     public static List<Integer> getAdData() {
         List<Integer> adList = new ArrayList<>();

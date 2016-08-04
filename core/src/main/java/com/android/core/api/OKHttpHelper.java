@@ -20,11 +20,6 @@ import okhttp3.Cache;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 
-/**
- * @author: 蜡笔小新
- * @date: 2016-07-05 17:23
- * @GitHub: https://github.com/meikoz
- */
 public class OKHttpHelper {
 
     private static SSLSocketFactory socketFactory;
