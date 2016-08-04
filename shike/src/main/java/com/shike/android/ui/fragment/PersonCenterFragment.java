@@ -1,9 +1,15 @@
 package com.shike.android.ui.fragment;
 
 import android.support.v7.widget.Toolbar;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.android.core.base.AbsBaseFragment;
+import com.android.core.control.Glides;
+import com.android.core.control.ScreenUtil;
+import com.android.core.widget.UiScrollView;
 import com.shike.android.R;
 
 import butterknife.Bind;
@@ -13,11 +19,17 @@ import butterknife.Bind;
  */
 public class PersonCenterFragment extends AbsBaseFragment {
 
-    @Bind(R.id.toolbar)
-    Toolbar mToolbar;
+    @Bind(R.id.iv_user_avatar)
+    ImageView mUserAvatar;
 
-    @Bind(R.id.toolbarTitle)
-    TextView toolbarTitle;
+    @Bind(R.id.iv_global_adv)
+    TextView mGlobalAdv;
+
+    @Bind(R.id.rlt_navi_top)
+    RelativeLayout mNaviView;
+
+    @Bind(R.id.slv_user)
+    UiScrollView mSlvView;
 
     public static PersonCenterFragment newInstance() {
         PersonCenterFragment mFragment = new PersonCenterFragment();
@@ -31,7 +43,18 @@ public class PersonCenterFragment extends AbsBaseFragment {
 
     @Override
     protected void onInitView() {
-        toolbarTitle.setText(R.string.strPersonCenter);
+        Glides.getInstance().loadCircle(getActivity(), R.drawable.abc_adv_3, mUserAvatar);
+//        Glides.getInstance().load(getActivity(), R.drawable.abc_welcome_bg, mGlobalAdv);
+        mNaviView.getBackground().mutate().setAlpha(0);
+        mSlvView.setCallback(new UiScrollView.Callback() {
+            @Override
+            public void onScrollChanged(ScrollView who, int l, int t, int oldl, int oldt) {
+                int height = ScreenUtil.dp2px(getActivity(), 200);
+                double ratio = Math.min(1.0, t * 1.0 / height);
+                double moveY = ratio * 255.0;
+                mNaviView.getBackground().setAlpha((int) moveY);
+            }
+        });
     }
 
     @Override
