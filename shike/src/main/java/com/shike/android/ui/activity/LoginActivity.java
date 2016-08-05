@@ -3,11 +3,10 @@ package com.shike.android.ui.activity;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.Toolbar;
 
+import com.android.core.adapter.MyPagerAdapter;
 import com.android.core.base.AbsBaseActivity;
 import com.shike.android.R;
 import com.shike.android.ui.fragment.LoginByAccountFragment;
@@ -60,33 +59,5 @@ public class LoginActivity extends AbsBaseActivity {
     @Override
     protected void onInitData() {
 
-    }
-
-    static class MyPagerAdapter extends FragmentStatePagerAdapter {
-
-        private List<Fragment> list;
-
-        private List<CharSequence> titles;
-
-        public MyPagerAdapter(FragmentManager fm, List<Fragment> list, List<CharSequence> titles) {
-            super(fm);
-            this.list = list;
-            this.titles = titles;
-        }
-
-        @Override
-        public Fragment getItem(int position) {
-            return list.get(position);
-        }
-
-        @Override
-        public int getCount() {
-            return list.size();
-        }
-
-        @Override
-        public CharSequence getPageTitle(int position) {
-            return titles.get(position);
-        }
     }
 }

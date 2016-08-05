@@ -12,9 +12,6 @@ import butterknife.Bind;
  */
 public class AuctionItemFragment extends AbsBaseFragment {
 
-    @Bind(R.id.toolbarTitle)
-    TextView toolbarTitle;
-
     public static AuctionItemFragment newInstance() {
         AuctionItemFragment mFragment = new AuctionItemFragment();
         return mFragment;
@@ -22,12 +19,12 @@ public class AuctionItemFragment extends AbsBaseFragment {
 
     @Override
     protected int getLayoutResource() {
-        return R.layout.fragment_auction;
+        return R.layout.fragment_auction_item;
     }
 
     @Override
     protected void onInitView() {
-        toolbarTitle.setText(R.string.strAuction);
+
     }
 
     @Override
