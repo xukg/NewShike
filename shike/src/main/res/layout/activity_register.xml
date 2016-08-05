@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginRight="@dimen/dimen16"
-            android:background="@drawable/press_bkg"
+            android:background="@drawable/transparent_press_bkg"
             android:text="点击获取验证码"
             android:textAppearance="@style/TextAppearance.Larger.Orange" />
     </LinearLayout>

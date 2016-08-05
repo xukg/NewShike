@@ -24,7 +24,9 @@
 
 
 
+    <drawable name="lightWhite">#fffaf0</drawable>
     <drawable name="grey">@android:color/darker_gray</drawable>
     <drawable name="transparent">@android:color/transparent</drawable>
+    <drawable name="white">@android:color/white</drawable>
     <drawable name="colorPrimary">@color/colorPrimary</drawable>
 </resources>

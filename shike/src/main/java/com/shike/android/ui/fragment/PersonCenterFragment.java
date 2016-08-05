@@ -12,6 +12,7 @@ import com.android.core.control.ScreenUtil;
 import com.android.core.control.ToastUtil;
 import com.android.core.widget.UiScrollView;
 import com.shike.android.R;
+import com.shike.android.ui.activity.SettingActivity;
 
 import butterknife.Bind;
 import butterknife.OnClick;
@@ -67,7 +68,7 @@ public class PersonCenterFragment extends AbsBaseFragment {
                 ToastUtil.show("邀请好友");
                 break;
             case R.id.rlSetting:
-                ToastUtil.show("设置");
+                openActivity(SettingActivity.class);
                 break;
 
         }

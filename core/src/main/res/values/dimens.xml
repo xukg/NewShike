@@ -31,6 +31,13 @@
     <dimen name="dimen48">48.0dp</dimen>
     <dimen name="dimen50">50.0dp</dimen>
     <dimen name="dimen60">60.0dp</dimen>
+    <dimen name="dimen70">70.0dp</dimen>
+    <dimen name="dimen75">75.0dp</dimen>
+    <dimen name="dimen80">80.0dp</dimen>
+    <dimen name="dimen90">90.0dp</dimen>
+    <dimen name="dimen100">100.0dp</dimen>
+    <dimen name="dimen160">160.0dp</dimen>
+    <dimen name="dimen200">200.0dp</dimen>
 
     <dimen name="text_size_8sp">8.0sp</dimen>
     <dimen name="text_size_9sp">9.0sp</dimen>

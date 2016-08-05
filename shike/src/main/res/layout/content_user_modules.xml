@@ -18,7 +18,7 @@
         android:id="@+id/rlMsg"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:background="@drawable/press_bkg"
+        android:background="@drawable/transparent_press_bkg"
         android:paddingLeft="15dp">
 
         <ImageView
@@ -55,7 +55,7 @@
         android:id="@+id/rlMoneyhistory"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:background="@drawable/press_bkg"
+        android:background="@drawable/transparent_press_bkg"
         android:paddingLeft="15dp">
 
         <ImageView
@@ -93,7 +93,7 @@
         android:id="@+id/rlRealName"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:background="@drawable/press_bkg"
+        android:background="@drawable/transparent_press_bkg"
         android:paddingLeft="15dp">
 
         <ImageView
@@ -130,7 +130,7 @@
         android:id="@+id/rlHs"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:background="@drawable/press_bkg"
+        android:background="@drawable/transparent_press_bkg"
         android:paddingLeft="15dp">
 
         <ImageView
@@ -168,7 +168,7 @@
         android:id="@+id/rlUplondBanner"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:background="@drawable/press_bkg">
+        android:background="@drawable/transparent_press_bkg">
 
         <ImageView
             android:id="@+id/iv_user_schedule_icon"
@@ -221,7 +221,7 @@
         android:id="@+id/rlShare"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:background="@drawable/press_bkg"
+        android:background="@drawable/transparent_press_bkg"
         android:paddingLeft="15dp">
 
         <ImageView
@@ -268,7 +268,7 @@
         android:id="@+id/rlSetting"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:background="@drawable/press_bkg">
+        android:background="@drawable/transparent_press_bkg">
 
         <ImageView
             android:id="@+id/iv_user_cooperation_icon"

@@ -128,6 +128,11 @@
 
     <style name="TextAppearance" />
 
+    <style name="TextAppearance.SLarge" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/text_size_13sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
     <style name="TextAppearance.Large" parent="@style/TextAppearance">
         <item name="android:textSize">@dimen/text_size_14sp</item>
         <item name="android:textColor">@android:color/white</item>
@@ -138,32 +143,49 @@
         <item name="android:textColor">@android:color/white</item>
     </style>
 
-    <style name="TextAppearance.Large.White" parent="@style/TextAppearance.Large">
+    <style name="TextAppearance.SLarge.White" parent="@style/TextAppearance.SLarge">
+        <item name="android:textColor">@android:color/white</item>
+    </style> <style name="TextAppearance.Large.White" parent="@style/TextAppearance.Large">
         <item name="android:textColor">@android:color/white</item>
     </style>
     <style name="TextAppearance.Larger.White" parent="@style/TextAppearance.Larger">
         <item name="android:textColor">@android:color/white</item>
     </style>
 
-    <style name="TextAppearance.Large.LightBlack" parent="@style/TextAppearance.Large">
+    <style name="TextAppearance.SLarge.LightBlack" parent="@style/TextAppearance.SLarge">
+        <item name="android:textColor">@color/abc_tab_text_normal</item>
+    </style><style name="TextAppearance.Large.LightBlack" parent="@style/TextAppearance.Large">
         <item name="android:textColor">@color/abc_tab_text_normal</item>
     </style>
     <style name="TextAppearance.Larger.LightBlack" parent="@style/TextAppearance.Larger">
         <item name="android:textColor">@color/abc_tab_text_normal</item>
     </style>
 
-    <style name="TextAppearance.Large.Black" parent="@style/TextAppearance.Large">
+    <style name="TextAppearance.SLarge.Black" parent="@style/TextAppearance.SLarge">
+        <item name="android:textColor">@color/text_black</item>
+    </style> <style name="TextAppearance.Large.Black" parent="@style/TextAppearance.Large">
         <item name="android:textColor">@color/text_black</item>
     </style>
     <style name="TextAppearance.Larger.Black" parent="@style/TextAppearance.Larger">
         <item name="android:textColor">@color/text_black</item>
     </style>
 
-    <style name="TextAppearance.Large.Orange" parent="@style/TextAppearance.Large">
+    <style name="TextAppearance.SLarge.Orange" parent="@style/TextAppearance.SLarge">
+        <item name="android:textColor">@color/text_orange</item>
+    </style> <style name="TextAppearance.Large.Orange" parent="@style/TextAppearance.Large">
         <item name="android:textColor">@color/text_orange</item>
     </style>
     <style name="TextAppearance.Larger.Orange" parent="@style/TextAppearance.Larger">
         <item name="android:textColor">@color/text_orange</item>
+    </style>
+
+    <style name="TextAppearance.SLarge.Primary" parent="@style/TextAppearance.SLarge">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style><style name="TextAppearance.Large.Primary" parent="@style/TextAppearance.Large">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+    <style name="TextAppearance.Larger.Primary" parent="@style/TextAppearance.Larger">
+        <item name="android:textColor">@color/colorPrimary</item>
     </style>
 
 </resources>
