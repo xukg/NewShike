@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tvTotalNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen20"
+            android:text="25220"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTotalNum"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen20"
+            android:layout_marginTop="@dimen/dimen3"
+            android:text="当前可用时光豆"
+            android:textSize="@dimen/text_size_14sp" />
+    </RelativeLayout>
+
+    <View style="@style/ListDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white"
+        android:padding="@dimen/dimen10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前可提现时光豆"
+                android:textSize="@dimen/text_size_15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1010"
+                android:textAppearance="@style/TextAppearance.Larger.Primary" />
+        </LinearLayout>
+
+        <View
+            style="@style/VDivider"
+            android:padding="@dimen/dimen3" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen5">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今日可提现时光豆"
+                android:textSize="@dimen/text_size_15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1010"
+                android:textAppearance="@style/TextAppearance.Larger.Primary" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen10"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white"
+            android:padding="@dimen/dimen10">
+
+            <TextView
+                android:id="@+id/tvType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="礼物收益"
+                android:textAppearance="@style/TextAppearance.Larger.Black" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="2016-12-10"
+                android:textSize="@dimen/text_size_13sp" />
+
+            <TextView
+                android:id="@+id/tvItemIncome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvType"
+                android:layout_marginTop="@dimen/dimen4"
+                android:text="+100"
+                android:textAppearance="@style/TextAppearance.Large.Orange" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvType"
+                android:layout_marginTop="@dimen/dimen4"
+                android:layout_toRightOf="@id/tvItemIncome"
+                android:text="时光豆"
+                android:textSize="@dimen/text_size_13sp" />
+
+            <TextView
+                android:id="@+id/tvItemTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tvDate"
+                android:layout_marginTop="@dimen/dimen4"
+                android:text="2200"
+                android:textAppearance="@style/TextAppearance.Large.Orange"/>
+
+        </RelativeLayout>
+        <View
+            style="@style/ListDivider" />
+
+    </LinearLayout>
+
+</LinearLayout>

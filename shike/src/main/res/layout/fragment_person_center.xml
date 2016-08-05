@@ -12,7 +12,7 @@
         android:layout_gravity="center_vertical"
         android:background="@drawable/colorPrimary"
         android:gravity="center_vertical"
-        android:minHeight="@@dimen/dimen45"
+        android:minHeight="@dimen/dimen45"
         android:theme="@style/ToolBarStyle"
         app:contentInsetEnd="0dp"
         app:contentInsetLeft="0dp"
@@ -186,9 +186,11 @@
                 android:paddingTop="8dp">
 
                 <LinearLayout
+                    android:id="@+id/llMyIncome"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="@drawable/transparent_press_bkg"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -200,7 +202,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="我的收效"
+                        android:text="我的收益"
                         android:textSize="@dimen/text_size_12sp" />
                 </LinearLayout>
 
@@ -209,9 +211,11 @@
                     android:padding="@dimen/dimen3" />
 
                 <LinearLayout
+                    android:id="@+id/llMyAuction"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="@drawable/transparent_press_bkg"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -232,9 +236,11 @@
                     android:padding="@dimen/dimen3" />
 
                 <LinearLayout
+                    android:id="@+id/llMyLive"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="@drawable/transparent_press_bkg"
                     android:gravity="center"
                     android:orientation="vertical">
 

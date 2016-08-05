@@ -44,7 +44,7 @@
             android:windowSoftInputMode="stateHidden|adjustResize" />
 
         <activity
-            android:name=".ui.activity.SettingActivity"
+            android:name=".ui.activity.MyIncomeActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
@@ -57,6 +57,24 @@
 
         <activity
             android:name=".ui.activity.AgreementActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.activity.FeedbackActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.activity.SystemQuestionActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.activity.SystemQuestionDetailActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />

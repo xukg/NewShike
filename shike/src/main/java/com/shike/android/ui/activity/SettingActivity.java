@@ -34,14 +34,14 @@ public class SettingActivity extends AbsBaseActivity {
 
     }
 
-    @OnClick({R.id.rlFackback, R.id.rlQuestion, R.id.rlCleanCache, R.id.rlAbout, R.id.rlLogout})
+    @OnClick({R.id.rlFeedback, R.id.rlQuestion, R.id.rlCleanCache, R.id.rlAbout, R.id.rlLogout})
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.rlFackback:
-                ToastUtil.show("用户反馈");
+            case R.id.rlFeedback:
+                openActivity(FeedbackActivity.class);
                 break;
             case R.id.rlQuestion:
-                ToastUtil.show("常见问题");
+                openActivity(SystemQuestionActivity.class);
                 break;
             case R.id.rlCleanCache:
                 ToastUtil.show("清除缓存");

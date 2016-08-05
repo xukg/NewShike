@@ -22,6 +22,8 @@
 
         <!-- 设置activity切换动画 -->
         <item name="android:windowAnimationStyle">@style/activityAnimation</item>
+
+        <item name="android:textColorSecondary">#333333</item>
     </style>
 
     <!-- animation 样式 -->
@@ -130,17 +132,14 @@
 
     <style name="TextAppearance.SLarge" parent="@style/TextAppearance">
         <item name="android:textSize">@dimen/text_size_13sp</item>
-        <item name="android:textColor">@android:color/white</item>
     </style>
 
     <style name="TextAppearance.Large" parent="@style/TextAppearance">
         <item name="android:textSize">@dimen/text_size_14sp</item>
-        <item name="android:textColor">@android:color/white</item>
     </style>
 
     <style name="TextAppearance.Larger" parent="@style/TextAppearance">
         <item name="android:textSize">@dimen/text_size_16sp</item>
-        <item name="android:textColor">@android:color/white</item>
     </style>
 
     <style name="TextAppearance.SLarge.White" parent="@style/TextAppearance.SLarge">

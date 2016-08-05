@@ -24,6 +24,7 @@
     <dimen name="dimen20">20.0dp</dimen>
 
     <dimen name="dimen24">24.0dp</dimen>
+    <dimen name="dimen25">25.0dp</dimen>
     <dimen name="dimen30">30.0dp</dimen>
     <dimen name="dimen35">35.0dp</dimen>
     <dimen name="dimen40">40.0dp</dimen>
@@ -36,6 +37,8 @@
     <dimen name="dimen80">80.0dp</dimen>
     <dimen name="dimen90">90.0dp</dimen>
     <dimen name="dimen100">100.0dp</dimen>
+    <dimen name="dimen110">110.0dp</dimen>
+    <dimen name="dimen120">120.0dp</dimen>
     <dimen name="dimen160">160.0dp</dimen>
     <dimen name="dimen200">200.0dp</dimen>
 
@@ -52,4 +55,8 @@
     <dimen name="text_size_18sp">18.0sp</dimen>
     <dimen name="text_size_19sp">19.0sp</dimen>
     <dimen name="text_size_20sp">20.0sp</dimen>
+    <dimen name="text_size_24sp">24.0sp</dimen>
+    <dimen name="text_size_25sp">25.0sp</dimen>
+    <dimen name="text_size_26sp">26.0sp</dimen>
+    <dimen name="text_size_30sp">30.0sp</dimen>
 </resources>

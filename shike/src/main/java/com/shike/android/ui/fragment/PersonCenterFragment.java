@@ -12,6 +12,7 @@ import com.android.core.control.ScreenUtil;
 import com.android.core.control.ToastUtil;
 import com.android.core.widget.UiScrollView;
 import com.shike.android.R;
+import com.shike.android.ui.activity.MyIncomeActivity;
 import com.shike.android.ui.activity.SettingActivity;
 
 import butterknife.Bind;
@@ -46,9 +47,20 @@ public class PersonCenterFragment extends AbsBaseFragment {
     }
 
 
-    @OnClick({R.id.rlMsg, R.id.rlMoneyhistory, R.id.rlRealName, R.id.rlHs, R.id.rlUplondBanner, R.id.rlShare, R.id.rlSetting})
-    public void onClick(View v){
-        switch (v.getId()){
+    @OnClick({R.id.llMyIncome, R.id.llMyAuction, R.id.llMyLive,
+            R.id.rlMsg, R.id.rlMoneyhistory, R.id.rlRealName, R.id.rlHs,
+            R.id.rlUplondBanner, R.id.rlShare, R.id.rlSetting})
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.llMyIncome:
+                openActivity(MyIncomeActivity.class);
+                break;
+            case R.id.llMyAuction:
+                ToastUtil.show("我的拍卖");
+                break;
+            case R.id.llMyLive:
+                ToastUtil.show("我的直播");
+                break;
             case R.id.rlMsg:
                 ToastUtil.show("我的消息");
                 break;
