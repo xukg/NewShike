@@ -12,9 +12,11 @@ import com.android.core.control.ScreenUtil;
 import com.android.core.control.ToastUtil;
 import com.android.core.widget.UiScrollView;
 import com.shike.android.R;
+import com.shike.android.ui.activity.AuthenticationActivity;
 import com.shike.android.ui.activity.MyIncomeActivity;
 import com.shike.android.ui.activity.RechargeActivity;
 import com.shike.android.ui.activity.SettingActivity;
+import com.shike.android.ui.activity.UserDetailActivity;
 
 import butterknife.Bind;
 import butterknife.OnClick;
@@ -48,7 +50,7 @@ public class PersonCenterFragment extends AbsBaseFragment {
     }
 
 
-    @OnClick({R.id.tvRecharge,
+    @OnClick({R.id.tvRecharge,R.id.ivAvatar,
             R.id.llMyIncome, R.id.llMyAuction, R.id.llMyLive,
             R.id.rlMsg, R.id.rlMoneyhistory, R.id.rlRealName, R.id.rlHs,
             R.id.rlUplondBanner, R.id.rlShare, R.id.rlSetting})
@@ -56,6 +58,9 @@ public class PersonCenterFragment extends AbsBaseFragment {
         switch (v.getId()) {
             case R.id.tvRecharge:
                 openActivity(RechargeActivity.class);
+                break;
+            case R.id.ivAvatar:
+                openActivity(UserDetailActivity.class);
                 break;
             case R.id.llMyIncome:
                 openActivity(MyIncomeActivity.class);
@@ -73,7 +78,7 @@ public class PersonCenterFragment extends AbsBaseFragment {
                 ToastUtil.show("资金记录");
                 break;
             case R.id.rlRealName:
-                ToastUtil.show("实名认证");
+                openActivity(AuthenticationActivity.class);
                 break;
             case R.id.rlHs:
                 ToastUtil.show("我的呼声");

@@ -4,10 +4,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <View style="@style/ListDivider"
+        android:layout_marginTop="@dimen/dimen16"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimen48"
-        android:layout_marginTop="@dimen/dimen16"
         android:background="@android:color/white"
         android:gravity="center_vertical">
 
@@ -19,14 +21,15 @@
             android:drawableLeft="@drawable/ic_tab_bar_home"
             android:drawablePadding="@dimen/dimen10"
             android:hint="请输入用户名/手机"
-            android:textSize="@dimen/text_size_16sp" />
+            android:textSize="@dimen/text_size_14sp" />
     </LinearLayout>
 
+
+    <View style="@style/ListDivider"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimen48"
-        android:layout_marginTop="@dimen/dimen0.5"
         android:background="@android:color/white"
         android:gravity="center_vertical">
 
@@ -39,8 +42,9 @@
             android:drawablePadding="@dimen/dimen10"
             android:hint="请输入密码"
             android:inputType="textPassword"
-            android:textSize="@dimen/text_size_16sp" />
+            android:textSize="@dimen/text_size_14sp" />
     </LinearLayout>
+    <View style="@style/ListDivider"/>
 
     <Button
         android:id="@+id/btnLogin"

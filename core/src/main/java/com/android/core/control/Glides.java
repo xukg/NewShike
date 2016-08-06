@@ -8,11 +8,6 @@ import com.android.core.R;
 import com.android.core.widget.glide.GlideCircleTransform;
 import com.bumptech.glide.Glide;
 
-/**
- * @author: 蜡笔小新
- * @date: 2016-06-14 16:02
- * @GitHub: https://github.com/meikoz
- */
 public class Glides {
 
     public static Glides instance = new Glides();

@@ -187,4 +187,13 @@
         <item name="android:textColor">@color/colorPrimary</item>
     </style>
 
+    <style name="TextAppearance.SLarge.Red" parent="@style/TextAppearance.SLarge">
+        <item name="android:textColor">@color/red</item>
+    </style><style name="TextAppearance.Large.Red" parent="@style/TextAppearance.Large">
+        <item name="android:textColor">@color/red</item>
+    </style>
+    <style name="TextAppearance.Larger.Red" parent="@style/TextAppearance.Larger">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
 </resources>

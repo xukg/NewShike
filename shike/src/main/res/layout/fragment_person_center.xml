@@ -261,8 +261,6 @@
                 style="@style/ListDivider"
                 android:layout_marginTop="@dimen/dimen5" />
 
-            <!--<include layout="@layout/content_order_layout" />-->
-
             <include layout="@layout/content_user_modules" />
 
         </LinearLayout>

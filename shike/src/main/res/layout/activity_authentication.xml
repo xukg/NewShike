@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/toolbar" />
+
+    <Button
+        android:id="@+id/btnOk"
+        style="@style/ButtonMain"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:text="提交" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btnOk"
+        android:layout_below="@+id/toolbar"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen6"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="基本资料" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(必填)"
+                    android:textAppearance="@style/TextAppearance.Large.Red" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen48"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓名"
+                    android:textAppearance="@style/TextAppearance.Larger.Black" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen10"
+                    android:background="@null"
+                    android:hint="请输入您的真实姓名"
+                    android:textSize="@dimen/text_size_14sp" />
+            </LinearLayout>
+
+            <View style="@style/ListDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen48"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="身份证号"
+                    android:textAppearance="@style/TextAppearance.Larger.Black" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen10"
+                    android:background="@null"
+                    android:hint="请输入您的身份证号"
+                    android:textSize="@dimen/text_size_14sp" />
+            </LinearLayout>
+
+            <View style="@style/ListDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen6"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上传身份证明" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(必须)"
+                    android:textAppearance="@style/TextAppearance.Large.Red" />
+            </LinearLayout>
+
+            <View style="@style/ListDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen10">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen100"
+                        android:layout_marginRight="@dimen/dimen5"
+                        android:layout_weight="1"
+                        android:src="@drawable/abc_adv_3" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen100"
+                        android:layout_marginLeft="@dimen/dimen5"
+                        android:layout_weight="1"
+                        android:src="@drawable/abc_adv_3" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen10"
+                    android:paddingRight="@dimen/dimen10"
+                    >
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen100"
+                        android:layout_marginRight="@dimen/dimen5"
+                        android:layout_weight="1"
+                        android:src="@drawable/abc_adv_3" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen100"
+                        android:layout_marginLeft="@dimen/dimen5"
+                        android:layout_weight="1"
+                        android:src="@drawable/abc_adv_3" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen10"
+                    android:text="我们会严格保护您的隐私！"
+                    android:textAppearance="@style/TextAppearance.Large.Black" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+     
+
+
+</RelativeLayout>

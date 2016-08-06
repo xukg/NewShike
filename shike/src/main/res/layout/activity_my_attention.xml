@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grey_border"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen10">
+
+
+        <ImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="@dimen/dimen60"
+            android:layout_height="@dimen/dimen60"
+            android:layout_marginRight="@dimen/dimen10" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen5"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/dimen10"
+                android:drawableRight="@drawable/icon_arrow"
+                android:text="汪涵"
+                android:textAppearance="@style/TextAppearance.Larger.Black" />
+
+            <TextView
+                android:id="@+id/tvLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen10"
+                android:layout_toRightOf="@id/tvName"
+                android:text="LV1" />
+
+            <TextView
+                android:id="@+id/tvSlogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvName"
+                android:layout_marginTop="@dimen/dimen3"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="欢迎大家来看直播" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grey_border_with_radius"
+            android:padding="@dimen/dimen5"
+            android:text="已关注" />
+
+    </LinearLayout>
+
+</LinearLayout>

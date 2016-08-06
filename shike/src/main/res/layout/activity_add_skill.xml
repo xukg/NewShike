@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+
+    <View
+        style="@style/ListDivider"
+        android:layout_marginTop="@dimen/dimen10" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white"
+        android:padding="@dimen/dimen10"
+        android:text="请选择技能标签"
+        android:textAppearance="@style/TextAppearance.Large.Black" />
+
+    <View style="@style/ListDivider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen10"
+        android:background="@drawable/white"
+        android:padding="@dimen/dimen16">
+
+        <ImageView
+            android:id="@+id/ivInsertImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/image_add"
+            android:padding="5dp"
+            android:scaleType="fitXY" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/etContent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen160"
+        android:layout_margin="@dimen/dimen10"
+        android:background="@drawable/grey_border"
+        android:gravity="top"
+        android:hint="其他技能填写"
+        android:padding="@dimen/dimen5"
+        android:textAppearance="@style/TextAppearance.Large.Black" />
+
+    <Button
+        android:id="@+id/btnOk"
+        style="@style/ButtonMain"
+        android:layout_width="match_parent"
+        android:text="提交" />
+
+</LinearLayout>
